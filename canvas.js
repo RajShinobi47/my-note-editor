@@ -57,9 +57,9 @@ canvas.addEventListener("mousemove", (e) =>{
         let data = {
             x: e.clientX,
             y: e.clientY,
-            color: eraserFlag ?eraserColor: penColor,
-            width: eraserFlag ?eraserWidth: penWidth
-        }
+            color: eraserFlag ? eraserColor: penColor,
+            width: eraserFlag ? eraserWidth: penWidth
+        };
 
         // send data to server
         socket.emit("drawStroke", data);
